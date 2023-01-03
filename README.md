@@ -5,6 +5,10 @@
     var totalItemCount=0
 
 
+
+
+
+
  val layoutManager=LinearLayoutManager(this@MainActivity)
         recyclerView.layoutManager=layoutManager
         recyclerView.adapter=catAdapter
@@ -15,9 +19,7 @@
                 visibleItemCount=layoutManager.childCount
                 totalItemCount=layoutManager.itemCount
                 pastVisibleItem=layoutManager.findLastCompletelyVisibleItemPosition()
-
-
-                if (dy>0){
+                     if (dy>0){
                 
                     //Toast.makeText(this@MainActivity,"dy:$dy\n$visibleItemCount",Toast.LENGTH_SHORT).show()
                    
