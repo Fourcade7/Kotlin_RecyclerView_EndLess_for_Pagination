@@ -9,12 +9,12 @@
 
 
 
- val layoutManager=LinearLayoutManager(this@MainActivity)
-        recyclerView.layoutManager=layoutManager
-        recyclerView.adapter=catAdapter
-        recyclerView.addOnScrollListener(object : OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-             super.onScrolled(recyclerView, dx, dy)
+         val layoutManager=LinearLayoutManager(this@MainActivity)
+                recyclerView.layoutManager=layoutManager
+                recyclerView.adapter=catAdapter
+                recyclerView.addOnScrollListener(object : OnScrollListener() {
+                    override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                     super.onScrolled(recyclerView, dx, dy)
                 
                 visibleItemCount=layoutManager.childCount
                 totalItemCount=layoutManager.itemCount
